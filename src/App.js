@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './components/Component.css';
 import SignIn from './components/Signin';
+import Home from './components/Home';
 
 function App() {
   const [repos, setrepos] = useState([
@@ -64,19 +65,20 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Navigation Links */}
-        <nav className="navigation-links" style={{ padding: '10px', background: '#f4f4f4' }}>
-          <Link to="/repositories" style={{ marginRight: '15px', textDecoration: 'none', color: '#1570ef' }}>
-            Repositories
-          </Link>
-          <Link to="/signin" style={{ textDecoration: 'none', color: '#1570ef' }}>
-            Sign In
-          </Link>
-        </nav>
+        
 
         {/* Routes */}
         <Routes>
           {/* Repositories Route */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Home/>
+              </>
+            }
+          />
+          {/* Sign-In Route */}
           <Route
             path="/repositories"
             element={

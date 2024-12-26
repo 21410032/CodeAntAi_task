@@ -14,9 +14,19 @@
 }
 
 /*  sidebar css */
-
-
+.navbar{
+    left: 0px;
+    top: 0px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
 .sidebar {
+    padding-top: 70px;
+    width: 242px !important;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,9 +38,8 @@
 .navigation {
     width: 100%;
     display: flex;
-    padding-top:24px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
     
 }
@@ -48,7 +57,7 @@
 
 
 .input-dropdown {
-  width: 100%;
+  
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -61,7 +70,7 @@
 
 
 .dropbtn {
-   width: 100%;
+  
     display: flex;
     justify-content: space-between;
     padding:8px 12px;
@@ -160,8 +169,13 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
 .repositories-container {
    margin-left: 240px;
     padding: 16px 32px; /* Add some padding for spacing */
-    font-family: Arial, sans-serif;
-    
+    z-index: 500;
+    border-radius:12px;
+border: 1px solid #E9EAEB;
+background: #FFF;
+
+/* Shadows/shadow-xs */
+box-shadow: 0px 1px 2px 0px  rgba(10, 13, 18, 0.05);
   }
   
   /* Header Section */
@@ -216,7 +230,7 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
  
   .search-container {
     display: flex;
-    width: 100%;
+    width: 366px;
     padding: 10px 14px;
     align-items: center;
     gap: 4px;
@@ -227,6 +241,8 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
   }
   
   .search-input {
+    font-size: 16px;
+    font-weight: 400px;
     display: flex;
     padding: 0px 2px;
     justify-content: center;
@@ -235,8 +251,7 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
     outline: none;
   }
   .btn{
-    border-radius:8px;
-    box-shadow: 0px 0px 0px 1px  rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,6 +264,12 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
     background: #FFF;
     font-size: 14px;
     font-weight: 400px;
+    border-radius: var(--radius-md, 8px);
+border: 1px solid #D5D7DA;
+background: #FFF;
+
+/* Shadows/shadow-xs-skeuomorphic */
+box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
   }
   
   .add-repo-button {
@@ -260,6 +281,12 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
     color: #FFF;
     font-size: 14px;
     font-weight: 400px;
+    border-radius: var(--radius-md, 8px);
+border: 2px solid rgba(255, 255, 255, 0.12);
+background: #1570EF;
+
+/* Shadows/shadow-xs-skeuomorphic */
+box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
   }
   
 
@@ -289,7 +316,6 @@ box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(
   }
   
   .repo-container {
-    height: 60px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -348,41 +374,47 @@ background: #F5F5F5;
   
 /* Left Of container css */
 .SignIn-left-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    background: #fff;
+    border-right: 1px solid #e9eaeb;
+    display: flex;
     justify-content: center;
+    width: 50%;
   }
   .cards{
     width: 474px;
 height: 322px;
-
+position: relative;
   }
   .primary-card {
-    width: 447px;
-    height: 170px;
-    flex-shrink: 0;
+    align-items: center;
+    background: #fff;
     border-radius: 24px;
-background: var(--Primary-white, #FFF);
-box-shadow: 0px 0px 24px 0px rgba(8, 23, 53, 0.16);
-  }
-  
-  .primary-card h3 {
-    margin: 0px 111px 20px 22px;
-    padding-top: 21px;
-  }
-  .primary-card hr{
-    height: 1px;
-    background: #E6E8F0;
-    margin-bottom: 22.4px;
-  }
-  .stats {
+    box-shadow: 0 0 24px 0 #08173529;
     display: flex;
-   margin-left: 20px;
-   margin-right: 28.5px;
-   justify-content: space-between;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .card-head{
+    align-items: center;
+    border-bottom: 1px solid #e6e8f0;
+    display: flex;
+    gap: 8px;
+    padding: 20px 22px;
+  }
+  .card-head h3{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .stats {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    padding: 22.5px 20px 28.5px;
+    width: 100%;
   }
   
   .stat-item {
@@ -404,15 +436,14 @@ font-weight: 400;
   }
 
   .card.secondary {
-    position: relative;
-    left: 210px;
-    bottom: 20px;
-    width: 265px;
-    height: 164px;
+    background: #fff;
     border-radius: 24px;
-    background: #FFF;
-    box-shadow: 0px 0px 24px 0px rgba(8, 23, 53, 0.16);
-    padding: 31.8px 34.2px 15.2px 15.4px;
+    box-shadow: 0 0 24px 0 #08173529;
+    height: 164px;
+    left: 204px;
+    position: absolute;
+    top: 158px;
+    width: 265px;
       }
   .secondary-card-top{
     display: flex;
@@ -422,6 +453,9 @@ font-weight: 400;
     display: flex;
     flex-direction: column;
     gap: 8.38px;
+    left: 33.83px;
+    position: absolute;
+    top: 88.19px;
   }
   .issues-fixed h4 {
     color: #171717;
@@ -435,12 +469,16 @@ font-weight: 400;
 font-size: 32px;
 font-weight: 700;
   }
+  .card-icon{
+    left: 31.83px;
+    position: absolute;
+    top: 15.21px;
+}
   
   .growth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    left: 169.83px;
+    position: absolute;
+    top: 26.36px;
   }
   
   .growth small {
@@ -489,13 +527,14 @@ font-weight: 700;
 
   
   .signin-container {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
-    flex: 1 0 0;
+    justify-content: center;
+    padding: 24px;
+    width: 50%;
   }
   .signin-container-top{
     display: flex;
@@ -511,7 +550,6 @@ font-weight: 700;
   }
   .signin-header{
     display: flex;
-    width: 624px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -596,11 +634,13 @@ text-decoration: none;
 
 /*signin css */
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .SignIn-left-container {
       display: none;
     }
-  
+  .sidebar{
+    display: none;
+  }
     .signin-container {
         width: 100%;
         display: flex;
@@ -621,29 +661,31 @@ align-self: stretch;
     .repo-desc{
         font-size: 14px;
     }
-    .sidebar{
-        display: flex;
-        flex-direction: row;
+    .navbar{
+        padding-right: 25px;
         width: 100%;
-        height: auto;
     }
-    .sidebar.open {
-        top: 0;
-        display: flex;
-height: 456px;
-justify-content: center;
+    .open {
+       width: 100% !important;
+display: flex;
 padding: 16px;
 gap: 0px;
 flex-direction: column;
 align-items: flex-start;
-flex-shrink: 0;
-align-self: stretch;
 border-bottom: 1px solid #E9EAEB;
 background: #FFF;
+margin-top: 2px;
+justify-content: center;
     }
     .open .input-dropdown{
         display: block;
+        width: 100%;
     } 
+    .dropbtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     .open .nav-lists{
         display: block;
     } 
@@ -656,26 +698,22 @@ background: #FFF;
     } 
   .hamburger{
         display: block;
-        position: absolute;
-        top: 35px;
-        right: 18px;
     }
     .repositories-container{
+        margin-top: 70px;
+
         margin-left: 0px;
-        margin-top: 60px;
         padding: 0px;
     }
-    .sidebar{
-        position: absolute;
-        top: 0px;
-    }
+   
     .input-dropdown,.nav-lists,.footer-nav{
         display: none;
     }
     .open .navigation{
         padding-top: 0px;
     }
-    
+    .search-container{
+        width: 100%;    }
   }
 
   

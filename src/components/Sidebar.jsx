@@ -29,10 +29,15 @@ function Sidebar() {
     const getNavLinkClass = ({ isActive }) => (isActive ? 'list-el active' : 'list-el');
 
     return (
+        <>
+        <div className="navbar"><img src={logo} alt="" className="log-img" />
+       <img className='hamburger' onClick={toggleSidebar} src={isSidebarOpen ? crossIcon : barsIcon} alt="toggle sidebar" />
+        </div>
+
         <header className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
             <div className="navigation">
-                <div className="nav-head">
-                    <div className="logo"><img src={logo} alt="" className="log-img" /></div>
+               
+                    
                     <div className="input-dropdown">
                         <div className="dropdown">
                             <button className="dropbtn"><span>UtkarshDhairyaPa...</span><img src={dropdownIcon} alt="" /></button>
@@ -41,7 +46,7 @@ function Sidebar() {
                             </div>
                         </div>
                     </div>
-                </div>
+               
                 <nav className="nav-lists">
                     {navItems.map((item, index) => (
                         <NavLink to={item.link} className={getNavLinkClass} key={index}>
@@ -63,9 +68,10 @@ function Sidebar() {
                 
             </div>
           
-                <img className='hamburger' onClick={toggleSidebar} src={isSidebarOpen ? crossIcon : barsIcon} alt="toggle sidebar" />
+           
          
         </header>
+        </>
     );
 
 
