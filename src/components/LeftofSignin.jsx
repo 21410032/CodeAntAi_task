@@ -1,6 +1,7 @@
 import React from 'react'
 import secCardIcon from '../images/sec-card-Icon.svg'
 import ArrowIcon from '../images/ArrowIcon.svg'
+import bgImage from '../images/Subtract.png'
 const LeftofSignin = () => {
   return (
     <div className="SignIn-left-container">
@@ -43,8 +44,10 @@ const LeftofSignin = () => {
         </div>
       </div>
 </div>
-      {/* Background Shape */}
-      {/* <div className="background-shape"></div> */}
+     
+      <div className="background-shape">
+        <img src={bgImage}></img>
+      </div>
     </div>
   )
 }

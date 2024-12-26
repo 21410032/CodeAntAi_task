@@ -19,7 +19,7 @@ function Sidebar() {
     };
 
     const navItems = [
-        { name: 'Repositories', link: '/', img: repoIcon },
+        { name: 'Repositories', link: '/repositories', img: repoIcon },
         { name: 'AI Code Review', link: '/ai-code-review', img: aiCodeIcon },
         { name: 'Cloud Security', link: '/cloud-security', img: cloudSecurityIcon },
         { name: 'How to Use', link: '/how-to-use', img: useIcon },
