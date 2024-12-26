@@ -2,16 +2,18 @@ import React from "react";
 import secCardIcon from "../images/sec-card-Icon.svg";
 import ArrowIcon from "../images/ArrowIcon.svg";
 import bgImage from "../images/Subtract.png";
-import logoIcon from '../images/logoIcon.svg';
+import logoIcon from "../images/logoIcon.svg";
+import "./Component.css";
 const LeftofSignin = () => {
   return (
     <div className="SignIn-left-container">
       <div className="cards">
         <div className="primary-card">
-            <div className="card-head">
-          <img src={logoIcon}></img><h3>AI to Detect & Autofix Bad Code</h3>
+          <div className="card-head">
+            <img src={logoIcon}></img>
+            <h3>AI to Detect & Autofix Bad Code</h3>
           </div>
-          
+
           <div className="stats">
             <div className="stat-item">
               <p className="value">30+</p>
@@ -49,7 +51,7 @@ const LeftofSignin = () => {
           </div>
         </div>
       </div>
-        <div className="background-shape">
+      <div className="background-shape">
         <img src={bgImage}></img>
       </div>
     </div>

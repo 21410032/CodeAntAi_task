@@ -13,13 +13,16 @@ function Repositories({ repos = [] }) {
   };
 
   const handleSearchKeyDown = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       setSearchTerm(event.target.value);
     }
   };
 
-  const filteredRepos = repos.filter((repo) =>
-    repo && repo.title && repo.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredRepos = repos.filter(
+    (repo) =>
+      repo &&
+      repo.title &&
+      repo.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
