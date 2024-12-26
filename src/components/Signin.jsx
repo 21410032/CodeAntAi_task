@@ -5,7 +5,7 @@ import bitbucketLogo from "../images/image 2.png"
 import azureLogo from "../images/image.png"
 import gitlabLogo from "../images/image (1).png"
 import SSOLogo from '../images/Icon.png'
-import logo from '../images/Frame 9.png';
+import logo from '../images/Frame 9.svg';
 const SignIn = () => {
   const [activeTab, setActiveTab] = useState("SAAS");
 

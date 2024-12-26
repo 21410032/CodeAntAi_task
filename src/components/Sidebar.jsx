@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../images/Frame 9.png';
+import logo from '../images/Frame 9.svg';
 import repoIcon from '../images/repoIcon.svg';
 import aiCodeIcon from '../images/aiCodeIcon.svg';
 import cloudSecurityIcon from '../images/cloudSecurity.svg';
