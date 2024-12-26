@@ -48,9 +48,9 @@ const LeftofSignin = () => {
             <p className="count">500K+</p>
           </div>
         </div>
+      </div>
         <div className="background-shape">
         <img src={bgImage}></img>
-      </div>
       </div>
     </div>
   );
