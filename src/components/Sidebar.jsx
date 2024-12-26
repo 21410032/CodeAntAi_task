@@ -35,7 +35,7 @@ function Sidebar() {
                     <div className="logo"><img src={logo} alt="" className="log-img" /></div>
                     <div className="input-dropdown">
                         <div className="dropdown">
-                            <button className="dropbtn"><span>UtkarshDhairyaPanwar</span><img src={dropdownIcon} alt="" /></button>
+                            <button className="dropbtn"><span>UtkarshDhairyaPa...</span><img src={dropdownIcon} alt="" /></button>
                             <div className="dropdown-content">
                                 <a href="#">UtkarshDhairyaPanwar</a>
                             </div>
